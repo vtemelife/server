@@ -1,0 +1,39 @@
+name: CI
+on: [create, push]
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v1
+    - name: Set up Python
+      uses: actions/setup-python@v1
+      with:
+        python-version: 3.7
+    - name: Install Dependencies
+      # pragma: allowlist secret
+      run: |
+        wget -q -O - https://www.postgresql.org/media/keys/ACCC4CF8.asc | sudo apt-key add -
+        sudo add-apt-repository "deb http://apt.postgresql.org/pub/repos/apt/ $(lsb_release -sc)-pgdg main"
+        curl -s https://packagecloud.io/install/repositories/rabbitmq/rabbitmq-server/script.deb.sh | sudo bash
+        sudo apt-get install -y gdal-bin postgresql-9.6 python-coverage rabbitmq-server
+        sudo -u postgres psql -c "ALTER USER postgres WITH PASSWORD 'postgres';"  # pragma: allowlist secret
+        sudo -u postgres createdb server
+    - name: Install Python dependencies
+      run: |
+        pip install -r requirements/dev.txt
+        pip install codecov
+    - name: Run Tests
+      run: make test
+      env:
+        DJANGO_DEBUG: 1
+        SECRET_KEY: secret
+        ALLOWED_HOSTS: '*'
+        DATABASE_URL: postgres://postgres:postgres@127.0.0.1:5432/server # pragma: allowlist secret
+        DJANGO_SETTINGS_MODULE: config.settings.dev
+        CELERY_BROKER_URL: amqp://guest:guest@localhost:5672 # pragma: allowlist secret
+        CELERY_BACKEND_RESULTS: amqp://guest:guest@localhost:5672 # pragma: allowlist secret
+        DJANGO_LOG_LEVEL: INFO
+    - name: Coverage Report
+      run: codecov
+      env:
+        CODECOV_TOKEN: ${{ secrets.CODECOV_TOKEN }}
