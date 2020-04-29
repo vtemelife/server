@@ -1,10 +1,11 @@
 # flake8: noqa
-from apps.clubs.models import Club
-from apps.users.models import User
 from cities_light.models import City, Country, Region
 from django.core.management.base import BaseCommand
 from django.db import models
 from django.template.defaultfilters import slugify
+
+from apps.clubs.models import Club
+from apps.users.models import User
 
 
 class Command(BaseCommand):

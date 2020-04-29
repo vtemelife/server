@@ -1,9 +1,10 @@
+from django.utils.translation import gettext_lazy as _
+from rest_framework import serializers
+
 from apps.generic.choices import AccessChoices
 from apps.generic.fields import ChoiceDisplayField, ContentTypeField
 from apps.storage.serializers import ImageSerializer
 from apps.users.serializers.profile import UserSerializer
-from django.utils.translation import gettext_lazy as _
-from rest_framework import serializers
 
 from .models import Media, MediaFolder
 

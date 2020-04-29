@@ -1,3 +1,5 @@
+from rest_framework import generics
+
 from apps.generic.permissions import IsModerator
 from apps.management.filtersets.media import MediaFilterSet
 from apps.management.serializers.media import (
@@ -7,7 +9,6 @@ from apps.management.serializers.media import (
     MediaToggleBanSerializer,
 )
 from apps.media.models import Media
-from rest_framework import generics
 
 
 class MediaListView(generics.ListAPIView):

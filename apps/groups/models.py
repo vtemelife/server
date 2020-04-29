@@ -1,9 +1,10 @@
-from apps.generic.choices import ComminityTypeChoices, ThemeChoices
-from apps.generic.models import GenericModelMixin
 from ckeditor.fields import RichTextField
 from django.contrib.contenttypes.fields import GenericRelation
 from django.db import models
 from django.utils.translation import gettext_lazy as _
+
+from apps.generic.choices import ComminityTypeChoices, ThemeChoices
+from apps.generic.models import GenericModelMixin
 
 
 class Group(GenericModelMixin, models.Model):

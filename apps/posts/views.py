@@ -1,8 +1,9 @@
-from apps.generic.permissions import IsAuthenticatedAndActive
-from apps.users.models import User
 from django.core.exceptions import PermissionDenied
 from django.db.models import F
 from rest_framework import generics
+
+from apps.generic.permissions import IsAuthenticatedAndActive
+from apps.users.models import User
 
 from .filtersets import PostFilterSet
 from .models import Post

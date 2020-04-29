@@ -1,3 +1,5 @@
+from rest_framework import generics
+
 from apps.generic.permissions import IsModerator
 from apps.management.filtersets.news import NewsFilterSet
 from apps.management.serializers.news import (
@@ -8,7 +10,6 @@ from apps.management.serializers.news import (
     NewsUpdateSerializer,
 )
 from apps.news.models import News
-from rest_framework import generics
 
 
 class NewsListView(generics.ListAPIView):

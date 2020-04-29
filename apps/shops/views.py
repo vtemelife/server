@@ -1,5 +1,6 @@
-from apps.generic.permissions import IsNotGuest
 from rest_framework import generics
+
+from apps.generic.permissions import IsNotGuest
 
 from .filtersets import ShopFilterSet
 from .models import Shop

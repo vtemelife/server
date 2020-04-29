@@ -1,11 +1,12 @@
 import logging
 
-from apps.generic.models import GenericModelMixin
 from django.db import models
 from django.utils.translation import gettext_lazy as _
 from imagekit.models import ImageSpecField
 from imagekit.processors import SmartResize
 from PIL import ImageFilter
+
+from apps.generic.models import GenericModelMixin
 
 logger = logging.getLogger("django")
 

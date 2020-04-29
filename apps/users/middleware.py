@@ -1,5 +1,6 @@
-from apps.users.models import UserOnline
 from django.utils import timezone
+
+from apps.users.models import UserOnline
 
 
 class ActiveUserMiddleware:

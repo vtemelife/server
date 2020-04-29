@@ -1,5 +1,6 @@
-from apps.generic.permissions import IsAuthenticatedAndActive
 from rest_framework import generics
+
+from apps.generic.permissions import IsAuthenticatedAndActive
 
 from .models import MobileVersion
 from .serializers import VersionSerializer

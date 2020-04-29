@@ -1,3 +1,5 @@
+from rest_framework import generics
+
 from apps.events.models import Party
 from apps.generic.permissions import IsModerator
 from apps.management.filtersets.parties import PartyFilterSet
@@ -7,7 +9,6 @@ from apps.management.serializers.parties import (
     PartyListSerializer,
     PartyToggleBanSerializer,
 )
-from rest_framework import generics
 
 
 class PartyListView(generics.ListAPIView):

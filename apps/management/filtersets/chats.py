@@ -1,6 +1,7 @@
+from django_filters import filterset
+
 from apps.chat.filtersets import UnreadFilter
 from apps.chat.models import Chat
-from django_filters import filterset
 
 
 class ChatFilterSet(filterset.FilterSet):

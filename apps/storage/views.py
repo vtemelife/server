@@ -1,7 +1,8 @@
-from apps.generic.permissions import IsAuthenticatedAndActive
 from rest_framework import generics
 from rest_framework.authentication import SessionAuthentication
 from rest_framework.parsers import MultiPartParser
+
+from apps.generic.permissions import IsAuthenticatedAndActive
 
 from .models import File, Image
 from .serializers import FileCreateSerializer, ImageCreateSerializer, ImageUploadSerializer

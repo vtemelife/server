@@ -1,6 +1,7 @@
-from apps.users.models import User
 from django.db.models.signals import post_save
 from django.dispatch import receiver
+
+from apps.users.models import User
 
 
 def auto_moderate_user_guest(user):

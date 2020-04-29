@@ -1,8 +1,9 @@
-from apps.generic.models import GenericModelMixin, GenericModerateMixin
 from ckeditor.fields import RichTextField
 from django.contrib.postgres.fields import ArrayField, JSONField
 from django.db import models
 from django.utils.translation import gettext_lazy as _
+
+from apps.generic.models import GenericModelMixin, GenericModerateMixin
 
 
 class Game(GenericModerateMixin, models.Model):

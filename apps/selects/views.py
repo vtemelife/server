@@ -1,9 +1,10 @@
+from cities_light.models import City, Country, Region
+from rest_framework import generics
+
 from apps.clubs.models import Club
 from apps.generic.permissions import IsAuthenticatedAndActive
 from apps.geo.serializers import CitySerializer, CountrySerializer, RegionSerializer
 from apps.users.models import User
-from cities_light.models import City, Country, Region
-from rest_framework import generics
 
 from .filtersets import ChatUsersFilterSet, CityFilterSet, RegionFilterSet
 from .serializers import ClubSelectSerializer, UserSelectSerializer

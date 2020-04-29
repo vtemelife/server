@@ -1,4 +1,5 @@
 import pytest
+
 from apps.geo.tests.factories import CityFactory, CountryFactory, RegionFactory
 
 

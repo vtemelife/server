@@ -1,10 +1,11 @@
-from apps.generic.choices import AccessChoices
-from apps.generic.permissions import IsAuthenticatedAndActive
-from apps.users.models import User
 from django.contrib.contenttypes.models import ContentType
 from django.core.exceptions import PermissionDenied
 from django.db.models import F
 from rest_framework import generics
+
+from apps.generic.choices import AccessChoices
+from apps.generic.permissions import IsAuthenticatedAndActive
+from apps.users.models import User
 
 from .filtersets import MediaFilterSet, MediaFolderFilterSet
 from .models import Media, MediaFolder

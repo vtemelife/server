@@ -1,11 +1,12 @@
 import datetime
 
-from apps.storage.serializers import ImageSerializer
-from apps.users.serializers.friends import ChatParticipantSerializer
-from apps.users.serializers.profile import UserSerializer
 from django.utils import timezone
 from django.utils.translation import gettext_lazy as _
 from rest_framework import serializers
+
+from apps.storage.serializers import ImageSerializer
+from apps.users.serializers.friends import ChatParticipantSerializer
+from apps.users.serializers.profile import UserSerializer
 
 from .models import Chat, ChatBan, Message
 

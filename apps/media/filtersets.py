@@ -1,5 +1,6 @@
-from apps.generic.filtersets import ContentTypeFilter
 from django_filters import filters, filterset
+
+from apps.generic.filtersets import ContentTypeFilter
 
 from .models import Media, MediaFolder
 

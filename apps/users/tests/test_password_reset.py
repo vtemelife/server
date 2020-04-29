@@ -2,12 +2,13 @@ from unittest.mock import patch
 
 import pytest
 import responses
-from apps.mail.models import Email
-from apps.mail.tasks import send_mail_task
-from apps.users.models import User
 from django.conf import settings
 from django.test import override_settings
 from django.urls import reverse
+
+from apps.mail.models import Email
+from apps.mail.tasks import send_mail_task
+from apps.users.models import User
 
 
 def send_mail_task_sync(options, **kwargs):

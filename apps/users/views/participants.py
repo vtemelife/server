@@ -1,8 +1,9 @@
+from rest_framework import generics
+
 from apps.generic.permissions import IsAuthenticatedAndActive
 from apps.users.filtersets.friends import FriendListFilterSet as ParticipantFilterSet
 from apps.users.models import User
 from apps.users.serializers.participants import ParticipantListItemSerializer
-from rest_framework import generics
 
 
 class ParticipantListView(generics.ListAPIView):

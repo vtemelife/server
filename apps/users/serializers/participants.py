@@ -1,7 +1,8 @@
+from rest_framework import serializers
+
 from apps.chat.models import Chat
 from apps.users.models import User
 from apps.users.serializers.profile import UserSerializer
-from rest_framework import serializers
 
 
 class ParticipantListItemSerializer(UserSerializer):

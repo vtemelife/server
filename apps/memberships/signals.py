@@ -1,9 +1,10 @@
-from apps.clubs.models import Club
-from apps.groups.models import Group
-from apps.users.models import User
 from django.contrib.contenttypes.models import ContentType
 from django.db.models.signals import post_save
 from django.dispatch import receiver
+
+from apps.clubs.models import Club
+from apps.groups.models import Group
+from apps.users.models import User
 
 from .models import MembershipRequest
 

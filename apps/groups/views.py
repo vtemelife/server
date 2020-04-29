@@ -1,7 +1,8 @@
-from apps.generic.permissions import IsNotGuest
-from apps.users.models import User
 from django.core.exceptions import PermissionDenied
 from rest_framework import generics
+
+from apps.generic.permissions import IsNotGuest
+from apps.users.models import User
 
 from .filtersets import GroupFilterSet
 from .models import Group

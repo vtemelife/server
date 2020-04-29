@@ -1,9 +1,10 @@
+from django.db.models import Count
+from rest_framework import generics
+
 from apps.generic.permissions import IsAuthenticatedAndActive
 from apps.users.filtersets.friends import FriendListFilterSet, FriendSearchFilterSet
 from apps.users.models import User
 from apps.users.serializers.friends import FriendDeleteSerializer, FriendListItemSerializer, FriendSearchSerializer
-from django.db.models import Count
-from rest_framework import generics
 
 
 class FriendSearchView(generics.ListAPIView):

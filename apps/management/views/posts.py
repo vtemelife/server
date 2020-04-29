@@ -1,3 +1,5 @@
+from rest_framework import generics
+
 from apps.generic.permissions import IsModerator
 from apps.management.filtersets.posts import PostFilterSet
 from apps.management.serializers.posts import (
@@ -7,7 +9,6 @@ from apps.management.serializers.posts import (
     PostToggleBanSerializer,
 )
 from apps.posts.models import Post
-from rest_framework import generics
 
 
 class PostListView(generics.ListAPIView):

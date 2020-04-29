@@ -1,8 +1,9 @@
-from apps.generic.permissions import IsAuthenticatedAndActive
-from apps.users.serializers.sign_in import SignInSerializer, SignInVerifySerializer
 from django.contrib.auth import login, logout
 from rest_framework import generics
 from rest_framework.response import Response
+
+from apps.generic.permissions import IsAuthenticatedAndActive
+from apps.users.serializers.sign_in import SignInSerializer, SignInVerifySerializer
 
 
 class SignInView(generics.GenericAPIView):

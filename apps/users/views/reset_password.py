@@ -1,8 +1,9 @@
+from django.utils.crypto import get_random_string
+from rest_framework import generics
+
 from apps.mail.mails import ResetPasswordVerification
 from apps.users.models import User
 from apps.users.serializers.reset_password import ResetPasswordStep1Serializer, ResetPasswordStep2Serializer
-from django.utils.crypto import get_random_string
-from rest_framework import generics
 
 
 class ResetPasswordStep1View(generics.UpdateAPIView):

@@ -1,5 +1,6 @@
-from apps.generic.filtersets import ContentTypeFilter
 from django_filters import filterset
+
+from apps.generic.filtersets import ContentTypeFilter
 
 from .models import MembershipRequest
 

@@ -1,7 +1,8 @@
-from apps.generic.models import GenericModelMixin
 from ckeditor_uploader.fields import RichTextUploadingField
 from django.db import models
 from django.utils.translation import ugettext_lazy as _
+
+from apps.generic.models import GenericModelMixin
 
 
 class MobileVersion(GenericModelMixin, models.Model):

@@ -1,6 +1,7 @@
-from apps.users.models import User
 from cities_light.models import City, Region
 from django_filters import filterset
+
+from apps.users.models import User
 
 
 class RegionFilterSet(filterset.FilterSet):

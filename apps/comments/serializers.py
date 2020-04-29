@@ -1,6 +1,7 @@
+from rest_framework import serializers
+
 from apps.generic.fields import ContentTypeField
 from apps.users.serializers.profile import AnonymousSerializer, UserSerializer
-from rest_framework import serializers
 
 from .models import Comment
 

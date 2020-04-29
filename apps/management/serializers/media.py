@@ -1,7 +1,8 @@
+from rest_framework import serializers
+
 from apps.media.models import Media
 from apps.storage.serializers import ImageSerializer
 from apps.users.serializers.profile import UserSerializer
-from rest_framework import serializers
 
 
 class MediaListSerializer(serializers.ModelSerializer):

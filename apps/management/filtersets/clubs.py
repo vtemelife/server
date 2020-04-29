@@ -1,6 +1,7 @@
+from django_filters import filterset
+
 from apps.clubs.models import Club
 from apps.generic.filtersets import BoolFilter
-from django_filters import filterset
 
 
 class ClubFilterSet(filterset.FilterSet):

@@ -1,5 +1,6 @@
-from apps.users.models import User
 from rest_framework.permissions import BasePermission
+
+from apps.users.models import User
 
 
 class IsAuthenticatedAndActive(BasePermission):

@@ -1,6 +1,7 @@
+from django_filters import filterset
+
 from apps.events.models import Party
 from apps.generic.filtersets import BoolFilter
-from django_filters import filterset
 
 
 class PartyFilterSet(filterset.FilterSet):

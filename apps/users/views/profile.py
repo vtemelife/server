@@ -1,3 +1,6 @@
+from django.core.exceptions import PermissionDenied
+from rest_framework import generics
+
 from apps.generic.permissions import IsAuthenticatedAndActive, IsReal
 from apps.users.models import User
 from apps.users.serializers.profile import (
@@ -7,8 +10,6 @@ from apps.users.serializers.profile import (
     ProfileSerializer,
     ProfileUpdateSerializer,
 )
-from django.core.exceptions import PermissionDenied
-from rest_framework import generics
 
 
 class ProfileView(generics.RetrieveAPIView):

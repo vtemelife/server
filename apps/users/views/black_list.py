@@ -1,3 +1,5 @@
+from rest_framework import generics
+
 from apps.generic.permissions import IsAuthenticatedAndActive
 from apps.users.models import BlackList
 from apps.users.serializers.black_list import (
@@ -5,7 +7,6 @@ from apps.users.serializers.black_list import (
     BlackListDeleteSerializer,
     BlackListItemSerializer,
 )
-from rest_framework import generics
 
 
 class BlackListView(generics.ListAPIView):

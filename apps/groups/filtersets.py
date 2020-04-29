@@ -1,5 +1,6 @@
-from apps.generic.filtersets import ParticipantFilter
 from django_filters import filterset
+
+from apps.generic.filtersets import ParticipantFilter
 
 from .models import Group
 

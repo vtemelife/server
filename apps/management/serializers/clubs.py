@@ -1,8 +1,9 @@
+from rest_framework import serializers
+
 from apps.clubs.models import Club
 from apps.geo.serializers import CitySerializer
 from apps.storage.serializers import ImageSerializer
 from apps.users.serializers.profile import UserSerializer
-from rest_framework import serializers
 
 
 class ClubListSerializer(serializers.ModelSerializer):

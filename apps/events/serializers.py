@@ -1,3 +1,6 @@
+from django.conf import settings
+from rest_framework import serializers
+
 from apps.clubs.models import Club
 from apps.generic.choices import ComminityTypeChoices, ThemeChoices
 from apps.generic.fields import ChoiceDisplayField
@@ -5,8 +8,6 @@ from apps.geo.serializers import CitySerializer
 from apps.storage.serializers import ImageSerializer
 from apps.users.models import User
 from apps.users.serializers.profile import UserSerializer
-from django.conf import settings
-from rest_framework import serializers
 
 from .models import Party, PartyUser
 

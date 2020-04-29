@@ -1,7 +1,8 @@
-from apps.generic.permissions import IsAuthenticatedAndActive
 from django.core.exceptions import PermissionDenied
 from django.db.models import F, Q
 from rest_framework import generics
+
+from apps.generic.permissions import IsAuthenticatedAndActive
 
 from .filtersets import NewsFilterSet
 from .models import News

@@ -1,6 +1,7 @@
+from rest_framework import generics
+
 from apps.users.models import User
 from apps.users.serializers.sign_up import SignUpStep1Serializer, SignUpStep2Serializer
-from rest_framework import generics
 
 
 class SignUpStep1View(generics.CreateAPIView):

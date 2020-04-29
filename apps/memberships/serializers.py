@@ -1,3 +1,7 @@
+from django.contrib.contenttypes.models import ContentType
+from django.utils.translation import gettext_lazy as _
+from rest_framework import serializers
+
 from apps.clubs.models import Club
 from apps.clubs.serializers import ClubListSerializer
 from apps.generic.fields import ContentTypeField
@@ -5,9 +9,6 @@ from apps.groups.models import Group
 from apps.groups.serializers import GroupListSerializer
 from apps.users.models import User
 from apps.users.serializers.profile import ProfileSerializer
-from django.contrib.contenttypes.models import ContentType
-from django.utils.translation import gettext_lazy as _
-from rest_framework import serializers
 
 from .models import MembershipRequest
 

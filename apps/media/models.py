@@ -1,6 +1,3 @@
-from apps.comments.models import Comment
-from apps.generic.choices import AccessChoices
-from apps.generic.models import GenericModelMixin, GenericModerateMixin
 from ckeditor.fields import RichTextField
 from django.contrib.contenttypes.fields import GenericForeignKey, GenericRelation
 from django.contrib.contenttypes.models import ContentType
@@ -8,6 +5,10 @@ from django.contrib.postgres.fields import ArrayField
 from django.db import models
 from django.utils.translation import gettext_lazy as _
 from model_utils import FieldTracker
+
+from apps.comments.models import Comment
+from apps.generic.choices import AccessChoices
+from apps.generic.models import GenericModelMixin, GenericModerateMixin
 
 
 class MediaFolder(GenericModelMixin, models.Model):

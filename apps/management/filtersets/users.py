@@ -1,6 +1,7 @@
+from django_filters import filters, filterset
+
 from apps.generic.filtersets import BoolFilter
 from apps.users.models import User
-from django_filters import filters, filterset
 
 
 class IsRealWaitingFilter(filters.CharFilter):

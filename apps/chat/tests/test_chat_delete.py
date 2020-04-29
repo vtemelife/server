@@ -1,9 +1,10 @@
 import pytest
+from django.conf import settings
+from django.urls import reverse
+
 from apps.chat.models import Chat
 from apps.chat.tests.factories import ChatFactory
 from apps.users.models import User
-from django.conf import settings
-from django.urls import reverse
 
 
 @pytest.mark.django_db

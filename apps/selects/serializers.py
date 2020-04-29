@@ -1,6 +1,7 @@
+from rest_framework import serializers
+
 from apps.clubs.models import Club
 from apps.users.models import User
-from rest_framework import serializers
 
 
 class UserSelectSerializer(serializers.ModelSerializer):

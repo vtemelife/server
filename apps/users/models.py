@@ -1,7 +1,5 @@
 import datetime
 
-from apps.generic.choices import ThemeChoices
-from apps.generic.models import GenericModelMixin, GenericModerateMixin
 from cities_light.models import City
 from ckeditor.fields import RichTextField
 from django.conf import settings
@@ -13,6 +11,9 @@ from django.db import models
 from django.utils import timezone
 from django.utils.translation import gettext_lazy as _
 from model_utils import FieldTracker
+
+from apps.generic.choices import ThemeChoices
+from apps.generic.models import GenericModelMixin, GenericModerateMixin
 
 
 class UserQuerySet(models.QuerySet):

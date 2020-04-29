@@ -1,10 +1,11 @@
+from django.contrib.contenttypes.models import ContentType
+from django.core.exceptions import PermissionDenied
+from rest_framework import generics
+
 from apps.clubs.models import Club
 from apps.generic.permissions import IsAuthenticatedAndActive
 from apps.groups.models import Group
 from apps.users.models import User
-from django.contrib.contenttypes.models import ContentType
-from django.core.exceptions import PermissionDenied
-from rest_framework import generics
 
 from .filtersets import MembershipRequestFilterSet
 from .models import MembershipRequest

@@ -1,8 +1,9 @@
 import pytest
-from apps.chat.tests.factories import ChatFactory, MessageFactory
-from apps.users.tests.factories import UserFactory
 from django.conf import settings
 from django.urls import reverse
+
+from apps.chat.tests.factories import ChatFactory, MessageFactory
+from apps.users.tests.factories import UserFactory
 
 
 @pytest.mark.django_db

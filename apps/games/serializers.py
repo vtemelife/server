@@ -1,5 +1,6 @@
-from apps.storage.serializers import ImageSerializer
 from rest_framework import serializers
+
+from apps.storage.serializers import ImageSerializer
 
 from .models import Game, GameUser
 

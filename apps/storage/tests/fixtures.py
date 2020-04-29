@@ -1,4 +1,5 @@
 import pytest
+
 from apps.storage.tests.factories import ImageFactory
 
 

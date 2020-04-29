@@ -1,3 +1,5 @@
+from rest_framework import generics
+
 from apps.generic.permissions import IsModerator
 from apps.management.filtersets.users import UserFilterSet
 from apps.management.serializers.users import (
@@ -7,7 +9,6 @@ from apps.management.serializers.users import (
     UserToggleBanSerializer,
 )
 from apps.users.models import User
-from rest_framework import generics
 
 
 class UserListView(generics.ListAPIView):

@@ -1,9 +1,10 @@
-from apps.generic.models import GenericModelMixin
 from django.contrib.contenttypes.fields import GenericForeignKey
 from django.contrib.contenttypes.models import ContentType
 from django.db import models
 from django.utils.translation import gettext_lazy as _
 from mptt.models import MPTTModel, TreeForeignKey
+
+from apps.generic.models import GenericModelMixin
 
 
 def limit_choices_to_content_type():

@@ -1,10 +1,11 @@
+from django.core.exceptions import PermissionDenied
+from django.shortcuts import get_object_or_404
+from rest_framework import generics
+
 from apps.generic.pagination import ReverseLimitOffsetPagination
 from apps.generic.permissions import IsAuthenticatedAndActive
 from apps.posts.models import Post
 from apps.users.models import User
-from django.core.exceptions import PermissionDenied
-from django.shortcuts import get_object_or_404
-from rest_framework import generics
 
 from .filtersets import CommentFilterSet
 from .models import Comment

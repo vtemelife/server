@@ -1,6 +1,3 @@
-from apps.comments.models import Comment
-from apps.generic.choices import ThemeChoices
-from apps.generic.models import GenericModelMixin
 from ckeditor.fields import RichTextField
 from ckeditor_uploader.fields import RichTextUploadingField
 from django.contrib.contenttypes.fields import GenericForeignKey, GenericRelation
@@ -10,6 +7,10 @@ from django.db import models
 from django.db.models import Q
 from django.utils import timezone
 from django.utils.translation import gettext_lazy as _
+
+from apps.comments.models import Comment
+from apps.generic.choices import ThemeChoices
+from apps.generic.models import GenericModelMixin
 
 
 def limit_choices_to_content_type():

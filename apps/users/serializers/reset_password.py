@@ -1,7 +1,8 @@
-from apps.users.models import User
-from apps.users.serializers.mixins import PasswordMixin
 from django.utils.translation import gettext_lazy as _
 from rest_framework import serializers
+
+from apps.users.models import User
+from apps.users.serializers.mixins import PasswordMixin
 
 
 class ResetPasswordStep1Serializer(serializers.ModelSerializer):

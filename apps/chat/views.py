@@ -1,11 +1,12 @@
-from apps.generic.pagination import ReverseLimitOffsetPagination
-from apps.generic.permissions import IsAuthenticatedAndActive, IsNotGuest
-from apps.users.models import User
 from django.core.exceptions import PermissionDenied
 from django.shortcuts import get_object_or_404
 from django.utils.translation import gettext_lazy as _
 from rest_framework import generics, serializers
 from rest_framework.response import Response
+
+from apps.generic.pagination import ReverseLimitOffsetPagination
+from apps.generic.permissions import IsAuthenticatedAndActive, IsNotGuest
+from apps.users.models import User
 
 from .filtersets import ChatFilterSet, MessageFilterSet
 from .models import Chat, Message

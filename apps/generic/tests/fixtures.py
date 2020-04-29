@@ -1,8 +1,9 @@
 import pytest
-from apps.generic.permissions import IsAuthenticatedAndActive
 from rest_framework.response import Response
 from rest_framework.test import APIClient
 from rest_framework.views import APIView
+
+from apps.generic.permissions import IsAuthenticatedAndActive
 
 
 @pytest.fixture

@@ -1,6 +1,7 @@
-from apps.generic.models import GenericModelMixin, GenericUUIDMixin
 from django.db import models
 from django.utils.translation import gettext_lazy as _
+
+from apps.generic.models import GenericModelMixin, GenericUUIDMixin
 
 
 class ChatQuerySet(models.QuerySet):

@@ -1,6 +1,7 @@
-from apps.generic.models import GenericModelMixin
 from django.db import models
 from django.utils.translation import ugettext_lazy as _
+
+from apps.generic.models import GenericModelMixin
 
 
 class Email(GenericModelMixin, models.Model):

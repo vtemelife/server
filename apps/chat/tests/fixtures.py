@@ -1,4 +1,5 @@
 import pytest
+
 from apps.chat.tests.factories import ChatFactory, MessageFactory
 
 

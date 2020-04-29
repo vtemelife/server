@@ -1,15 +1,16 @@
-from apps.events.models import Party, PartyUser
-from apps.generic.choices import AccessChoices, ThemeChoices
-from apps.media.models import Media
-from apps.news.models import News
-from apps.posts.models import Post
-from apps.users.models import User
 from django.contrib.contenttypes.models import ContentType
 from django.db import transaction
 from django.db.models.signals import post_save
 from django.dispatch import receiver
 from django.utils import timezone
 from django.utils.translation import gettext as _
+
+from apps.events.models import Party, PartyUser
+from apps.generic.choices import AccessChoices, ThemeChoices
+from apps.media.models import Media
+from apps.news.models import News
+from apps.posts.models import Post
+from apps.users.models import User
 
 
 @receiver(post_save, sender=User)

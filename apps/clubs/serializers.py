@@ -1,10 +1,11 @@
+from rest_framework import serializers
+
 from apps.generic.choices import ComminityTypeChoices, ThemeChoices
 from apps.generic.fields import ChoiceDisplayField
 from apps.geo.serializers import CitySerializer
 from apps.memberships.models import MembershipRequest
 from apps.storage.serializers import ImageSerializer
 from apps.users.serializers.profile import UserSerializer
-from rest_framework import serializers
 
 from .models import Club
 

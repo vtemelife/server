@@ -1,5 +1,6 @@
-from apps.news.models import News
 from django_filters import filters, filterset
+
+from apps.news.models import News
 
 
 class IsPublishFilter(filters.CharFilter):

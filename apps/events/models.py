@@ -1,8 +1,3 @@
-from apps.clubs.models import Club
-from apps.comments.models import Comment
-from apps.generic.choices import ComminityTypeChoices, ThemeChoices
-from apps.generic.models import GenericModerateMixin
-from apps.users.models import User
 from cities_light.models import City
 from ckeditor.fields import RichTextField
 from ckeditor_uploader.fields import RichTextUploadingField
@@ -11,6 +6,12 @@ from django.contrib.postgres.fields import ArrayField, JSONField
 from django.db import models
 from django.utils.translation import gettext_lazy as _
 from model_utils import FieldTracker
+
+from apps.clubs.models import Club
+from apps.comments.models import Comment
+from apps.generic.choices import ComminityTypeChoices, ThemeChoices
+from apps.generic.models import GenericModerateMixin
+from apps.users.models import User
 
 
 class Party(GenericModerateMixin, models.Model):

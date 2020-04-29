@@ -1,6 +1,7 @@
+from django_filters import filterset
+
 from apps.generic.filtersets import BoolFilter
 from apps.posts.models import Post
-from django_filters import filterset
 
 
 class PostFilterSet(filterset.FilterSet):

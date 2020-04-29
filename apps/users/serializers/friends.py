@@ -1,9 +1,10 @@
+from rest_framework import serializers
+
 from apps.chat.models import Chat
 from apps.generic.choices import ThemeChoices
 from apps.generic.fields import ChoiceDisplayField
 from apps.users.models import User
 from apps.users.serializers.profile import UserSerializer
-from rest_framework import serializers
 
 
 class ChatParticipantSerializer(UserSerializer):

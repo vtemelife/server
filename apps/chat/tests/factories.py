@@ -1,7 +1,8 @@
 import factory
+from factory import fuzzy
+
 from apps.chat.models import Chat, Message
 from apps.users.tests.factories import UserFactory
-from factory import fuzzy
 
 
 class ChatFactory(factory.django.DjangoModelFactory):

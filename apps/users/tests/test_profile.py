@@ -1,8 +1,9 @@
 import pytest
-from apps.generic.choices import ThemeChoices
-from apps.users.models import User
 from django.conf import settings
 from django.urls import reverse
+
+from apps.generic.choices import ThemeChoices
+from apps.users.models import User
 
 
 @pytest.mark.django_db

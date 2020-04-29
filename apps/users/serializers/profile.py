@@ -1,3 +1,8 @@
+from django.utils.text import slugify
+from django.utils.translation import gettext_lazy as _
+from rest_framework import serializers
+from unidecode import unidecode
+
 from apps.chat.models import Chat
 from apps.generic.choices import ThemeChoices
 from apps.generic.fields import ChoiceDisplayField
@@ -5,10 +10,6 @@ from apps.geo.serializers import CitySerializer
 from apps.storage.serializers import ImageSerializer
 from apps.users.models import User
 from apps.users.serializers.mixins import BirthdayMixin, PasswordMixin
-from django.utils.text import slugify
-from django.utils.translation import gettext_lazy as _
-from rest_framework import serializers
-from unidecode import unidecode
 
 
 class AnonymousSerializer(serializers.Serializer):

@@ -1,9 +1,10 @@
-from apps.generic.models import GenericModerateMixin
-from apps.users.models import User
 from django.contrib.contenttypes.fields import GenericForeignKey
 from django.contrib.contenttypes.models import ContentType
 from django.db import models
 from django.utils.translation import gettext_lazy as _
+
+from apps.generic.models import GenericModerateMixin
+from apps.users.models import User
 
 
 def limit_choices_to_content_type():

@@ -1,7 +1,8 @@
+from rest_framework import serializers
+
 from apps.events.models import Party
 from apps.geo.serializers import CitySerializer
 from apps.storage.serializers import ImageSerializer
-from rest_framework import serializers
 
 
 class PartyListSerializer(serializers.ModelSerializer):

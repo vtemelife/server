@@ -1,11 +1,12 @@
-from apps.generic.choices import ComminityTypeChoices, ThemeChoices
-from apps.generic.models import GenericModerateMixin
 from cities_light.models import City
 from ckeditor.fields import RichTextField
 from django.contrib.contenttypes.fields import GenericRelation
 from django.contrib.postgres.fields import JSONField
 from django.db import models
 from django.utils.translation import gettext_lazy as _
+
+from apps.generic.choices import ComminityTypeChoices, ThemeChoices
+from apps.generic.models import GenericModerateMixin
 
 
 class Club(GenericModerateMixin, models.Model):

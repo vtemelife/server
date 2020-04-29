@@ -1,7 +1,8 @@
 import factory
+from factory import fuzzy
+
 from apps.storage.models import File, Image
 from apps.users.tests.factories import UserFactory
-from factory import fuzzy
 
 
 class FileFactory(factory.django.DjangoModelFactory):

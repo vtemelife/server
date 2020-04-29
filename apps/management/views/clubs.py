@@ -1,3 +1,5 @@
+from rest_framework import generics
+
 from apps.clubs.models import Club
 from apps.generic.permissions import IsModerator
 from apps.management.filtersets.clubs import ClubFilterSet
@@ -7,7 +9,6 @@ from apps.management.serializers.clubs import (
     ClubListSerializer,
     ClubToggleBanSerializer,
 )
-from rest_framework import generics
 
 
 class ClubListView(generics.ListAPIView):

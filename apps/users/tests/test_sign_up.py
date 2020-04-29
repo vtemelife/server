@@ -1,7 +1,8 @@
 import pytest
+from django.urls import reverse
+
 from apps.generic.choices import ThemeChoices
 from apps.users.models import User
-from django.urls import reverse
 
 
 @pytest.mark.django_db
