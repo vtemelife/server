@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+{% load i18n %}
+
+{% block content %}
+{% blocktrans %}
+    For finishing registration on site
+{% endblocktrans %}
+<a href="https://vteme.life">vteme.life</a>
+{% blocktrans %}
+    enter the code {{code}} on page
+{% endblocktrans %}
+<a href="{{signup}}">{{signup}}</a>
+{% endblock content %}

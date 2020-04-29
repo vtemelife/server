@@ -1,0 +1,1199 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-04-10 19:29+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
+"%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || (n"
+"%100>=11 && n%100<=14)? 2 : 3);\n"
+
+#: apps/chat/admin.py:26 apps/clubs/admin.py:15 apps/comments/admin.py:14
+#: apps/events/admin.py:38 apps/games/admin.py:28 apps/games/admin.py:42
+#: apps/groups/admin.py:13 apps/media/admin.py:11 apps/media/admin.py:41
+#: apps/news/admin.py:27 apps/posts/admin.py:31 apps/shops/admin.py:13
+#: apps/shops/admin.py:26 apps/storage/admin.py:11 apps/storage/admin.py:24
+msgid "Actions"
+msgstr "Действия"
+
+#: apps/chat/apps.py:7 apps/chat/models.py:25 apps/chat/models.py:84
+#: apps/chat/models.py:105 apps/chat/models.py:110 apps/chat/models.py:130
+#: config/dashboard.py:69
+msgid "Chat"
+msgstr "Чат"
+
+#: apps/chat/models.py:26
+msgid "Conversation"
+msgstr "Личка"
+
+#: apps/chat/models.py:27 apps/chat/models.py:83
+msgid "Chat with moderators"
+msgstr "Чат с модераторами"
+
+#: apps/chat/models.py:30 apps/clubs/models.py:19 apps/events/models.py:20
+#: apps/games/models.py:15 apps/groups/models.py:17 apps/shops/models.py:17
+#: apps/shops/models.py:35 apps/storage/models.py:18 apps/storage/models.py:41
+#: apps/users/models.py:157
+msgid "Name"
+msgstr "Имя"
+
+#: apps/chat/models.py:32 apps/shops/models.py:15 apps/users/models.py:160
+msgid "Avatar"
+msgstr "Аватар"
+
+#: apps/chat/models.py:35
+msgid "Chat type"
+msgstr "Тип чата"
+
+#: apps/chat/models.py:37 apps/chat/models.py:135 apps/clubs/models.py:13
+#: apps/comments/models.py:32 apps/games/models.py:10 apps/groups/models.py:11
+#: apps/media/models.py:15 apps/media/models.py:57 apps/news/models.py:90
+#: apps/posts/models.py:62 apps/shops/models.py:9 apps/storage/models.py:16
+#: apps/storage/models.py:39 apps/users/models.py:281
+msgid "Creator"
+msgstr "Создатель"
+
+#: apps/chat/models.py:39 apps/clubs/models.py:15 apps/groups/models.py:13
+#: apps/shops/models.py:11
+msgid "Moderators"
+msgstr "Модераторы"
+
+#: apps/chat/models.py:41 apps/chat/models.py:44 apps/clubs/admin.py:11
+#: apps/clubs/models.py:17 apps/games/models.py:12 apps/groups/admin.py:11
+#: apps/groups/models.py:15 apps/mail/admin.py:15 apps/shops/admin.py:11
+#: apps/users/apps.py:7 apps/users/models.py:270 config/dashboard.py:35
+msgid "Users"
+msgstr "Пользователи"
+
+#: apps/chat/models.py:62
+msgid "User {} has been left the chat"
+msgstr "Пользователь {} покинул чат"
+
+#: apps/chat/models.py:106
+msgid "Chats"
+msgstr "Чат"
+
+#: apps/chat/models.py:112 apps/events/models.py:67 apps/games/models.py:37
+#: apps/memberships/models.py:20 apps/users/models.py:269
+#: apps/users/models.py:283 apps/users/models.py:297 apps/users/models.py:311
+msgid "User"
+msgstr "Пользователь"
+
+#: apps/chat/models.py:114
+msgid "Ban minutes"
+msgstr "Минуты бана"
+
+#: apps/chat/models.py:115
+msgid "Ban date"
+msgstr "Дата бана"
+
+#: apps/chat/models.py:118
+msgid "Chat Ban"
+msgstr "Чат Бан"
+
+#: apps/chat/models.py:119
+msgid "Chat Bans"
+msgstr "Чат Баны"
+
+#: apps/chat/models.py:132 apps/chat/models.py:158 apps/logs/admin.py:32
+msgid "Message"
+msgstr "Сообщение"
+
+#: apps/chat/models.py:138 apps/news/models.py:96
+msgid "Viewed by"
+msgstr "Просмотрено"
+
+#: apps/chat/models.py:142
+msgid "Attachments"
+msgstr "Вложения"
+
+#: apps/chat/models.py:159
+msgid "Messages"
+msgstr "Сообщения"
+
+#: apps/chat/serializers.py:164
+msgid "Please write your message"
+msgstr "Пожалуйста напишите сообщение"
+
+#: apps/chat/serializers.py:173
+#, python-brace-format
+msgid ""
+"Your have been baned for {minutes} minutes. Please contact with moderators "
+"of the chat."
+msgstr ""
+"Вы были забанены на {minutes} минут. Пожалуйста свяжитесь с модераторами "
+"чата."
+
+#: apps/chat/serializers.py:179
+msgid ""
+"You cannot send a message to this user cause you are in user's black list"
+msgstr "Вы не можете отсылать сообщения, потому что вы в черном списке у пользователя"
+
+#: apps/chat/views.py:97
+#, python-brace-format
+msgid "Chat with moderators ({name})"
+msgstr "Чат с модераторами ({name})"
+
+#: apps/clubs/admin.py:12 apps/groups/admin.py:12 apps/logs/models.py:12
+#: apps/shops/admin.py:12
+msgid "Info"
+msgstr "Информация"
+
+#: apps/clubs/admin.py:13 apps/clubs/models.py:35 apps/events/admin.py:36
+#: apps/events/models.py:30 apps/geo/apps.py:7 config/dashboard.py:48
+msgid "Geo"
+msgstr "Страны/Регионы/Города"
+
+#: apps/clubs/admin.py:14 apps/games/admin.py:27 apps/media/admin.py:40
+#: apps/posts/admin.py:30
+msgid "Moderation"
+msgstr "Модерация"
+
+#: apps/clubs/apps.py:7 apps/clubs/models.py:44
+msgid "Clubs"
+msgstr "Клубы"
+
+#: apps/clubs/models.py:20 apps/events/models.py:21 apps/games/models.py:14
+#: apps/groups/models.py:18 apps/news/models.py:87 apps/posts/models.py:70
+#: apps/users/models.py:158
+msgid "Slug"
+msgstr "Идентификатор в ссылке"
+
+#: apps/clubs/models.py:22 apps/events/models.py:23 apps/games/models.py:17
+#: apps/groups/models.py:20 apps/media/models.py:62 apps/news/models.py:100
+#: apps/posts/models.py:72 apps/shops/models.py:33 apps/storage/models.py:42
+#: apps/storage/models.py:89
+msgid "Image"
+msgstr "Картинка"
+
+#: apps/clubs/models.py:24 apps/events/models.py:26 apps/games/models.py:19
+#: apps/groups/models.py:22 apps/media/models.py:59 apps/news/models.py:104
+#: apps/posts/models.py:74 apps/shops/models.py:18 apps/shops/models.py:36
+#: apps/users/models.py:299
+msgid "Description"
+msgstr "Описание"
+
+#: apps/clubs/models.py:26 apps/events/models.py:34 apps/groups/models.py:24
+#: apps/media/models.py:70 apps/news/models.py:74
+msgid "Type"
+msgstr "Тип"
+
+#: apps/clubs/models.py:29 apps/groups/models.py:26 apps/users/models.py:177
+msgid "Relationship themes"
+msgstr "Темы"
+
+#: apps/clubs/models.py:31 apps/groups/models.py:28 apps/shops/models.py:20
+msgid "Raiting"
+msgstr "Рейтинг"
+
+#: apps/clubs/models.py:33 apps/events/models.py:28 apps/users/models.py:169
+msgid "City"
+msgstr "Город"
+
+#: apps/clubs/models.py:34 apps/events/models.py:29
+msgid "Address"
+msgstr "Адрес"
+
+#: apps/clubs/models.py:43 apps/events/models.py:18
+msgid "Club"
+msgstr "Клуб"
+
+#: apps/comments/admin.py:12
+msgid "Parent"
+msgstr "Родитель"
+
+#: apps/comments/admin.py:13
+msgid "Activity"
+msgstr "Активность"
+
+#: apps/comments/apps.py:7 apps/comments/models.py:45 config/dashboard.py:102
+msgid "Comments"
+msgstr "Комментарии"
+
+#: apps/comments/models.py:22 apps/media/models.py:47
+#: apps/memberships/models.py:24 apps/news/models.py:78 apps/posts/models.py:52
+msgid "Content type"
+msgstr "Тип объекта"
+
+#: apps/comments/models.py:26 apps/media/models.py:53
+#: apps/memberships/models.py:28 apps/news/models.py:84 apps/posts/models.py:58
+msgid "Object UUID"
+msgstr "UUID объекта"
+
+#: apps/comments/models.py:28 apps/media/models.py:55
+#: apps/memberships/models.py:30 apps/news/models.py:86 apps/posts/models.py:60
+msgid "Content object"
+msgstr "Объект"
+
+#: apps/comments/models.py:33 apps/events/models.py:37 apps/games/models.py:23
+#: apps/media/models.py:67 apps/news/models.py:113 apps/posts/models.py:67
+msgid "Likes"
+msgstr "Лайки"
+
+#: apps/comments/models.py:34 apps/comments/models.py:44
+msgid "Comment"
+msgstr "Комментарий"
+
+#: apps/events/admin.py:37
+msgid "Costs"
+msgstr "Стоимость"
+
+#: apps/events/apps.py:7
+msgid "Events"
+msgstr "Cобытия"
+
+#: apps/events/models.py:25
+msgid "Short description"
+msgstr "Краткое Описание"
+
+#: apps/events/models.py:31
+msgid "Start date"
+msgstr "Дата начала"
+
+#: apps/events/models.py:32
+msgid "End date"
+msgstr "Дата/Время окончания"
+
+#: apps/events/models.py:35 apps/events/models.py:69 apps/news/models.py:107
+#: apps/posts/models.py:65
+msgid "Theme"
+msgstr "Тема"
+
+#: apps/events/models.py:36 apps/games/models.py:21 apps/media/models.py:66
+#: apps/news/models.py:112 apps/posts/models.py:66
+msgid "Hash tags"
+msgstr "Хеш теги"
+
+#: apps/events/models.py:38 apps/games/models.py:24 apps/media/models.py:68
+#: apps/news/models.py:114 apps/posts/models.py:68
+msgid "Views"
+msgstr "Просмотры"
+
+#: apps/events/models.py:40
+msgid "Man cost"
+msgstr "Стоимость для мужчины"
+
+#: apps/events/models.py:41
+msgid "Woman cost"
+msgstr "Стоимость для женщины"
+
+#: apps/events/models.py:42
+msgid "Pair cost"
+msgstr "Стоимость для пары"
+
+#: apps/events/models.py:56 apps/events/models.py:68
+msgid "Party"
+msgstr "Вечеринка"
+
+#: apps/events/models.py:57
+msgid "Parties"
+msgstr "Вечеринки"
+
+#: apps/events/models.py:66
+msgid "No"
+msgstr "Нет"
+
+#: apps/events/models.py:66
+msgid "Yes"
+msgstr "Да"
+
+#: apps/events/models.py:66
+msgid "Probably"
+msgstr "Возможно"
+
+#: apps/events/models.py:72
+msgid "Party User"
+msgstr "Пользователь вечеринки"
+
+#: apps/events/models.py:73
+msgid "Party Users"
+msgstr "Пользователи вечеринки"
+
+#: apps/games/apps.py:7 apps/games/models.py:32 config/dashboard.py:107
+msgid "Games"
+msgstr "Игры"
+
+#: apps/games/models.py:20
+msgid "Rules"
+msgstr "Правила"
+
+#: apps/games/models.py:25
+msgid "Token"
+msgstr "Токен"
+
+#: apps/games/models.py:31 apps/games/models.py:39
+msgid "Game"
+msgstr "Игра"
+
+#: apps/games/models.py:40
+msgid "Game data"
+msgstr "Данные игры у игрока"
+
+#: apps/games/models.py:43
+msgid "Game User"
+msgstr "Игрок"
+
+#: apps/games/models.py:44
+msgid "Game Users"
+msgstr "Игроки"
+
+#: apps/generic/choices.py:12 apps/posts/models.py:37
+msgid "Swing"
+msgstr "Свинг"
+
+#: apps/generic/choices.py:13 apps/posts/models.py:39
+msgid "Bdsm"
+msgstr "Bdsm"
+
+#: apps/generic/choices.py:14 apps/users/models.py:151
+msgid "Virt"
+msgstr "Вирт"
+
+#: apps/generic/choices.py:15
+msgid "LGBT"
+msgstr "LGBT"
+
+#: apps/generic/choices.py:16 apps/users/models.py:150
+msgid "Poliamoria"
+msgstr "Полиамория"
+
+#: apps/generic/choices.py:17 apps/users/models.py:152 apps/users/models.py:278
+msgid "Other"
+msgstr "Другое"
+
+#: apps/generic/choices.py:24
+msgid "Open"
+msgstr "Открытый"
+
+#: apps/generic/choices.py:24
+msgid "Close"
+msgstr "Закрытый"
+
+#: apps/generic/choices.py:32
+msgid "No users"
+msgstr "Никому"
+
+#: apps/generic/choices.py:33
+msgid "Only friends"
+msgstr "Только СВОИ"
+
+#: apps/generic/choices.py:34
+msgid "All users"
+msgstr "Всем пользователям"
+
+#: apps/generic/models.py:10
+msgid "Created date"
+msgstr "Дата создания"
+
+#: apps/generic/models.py:11
+msgid "Updated date"
+msgstr "Дата обновления"
+
+#: apps/generic/models.py:18
+msgid "Is deleted"
+msgstr "Удален"
+
+#: apps/generic/models.py:31
+msgid "Waiting moderation"
+msgstr "Ожидание модерации"
+
+#: apps/generic/models.py:32
+msgid "Approved"
+msgstr "Одобрено"
+
+#: apps/generic/models.py:33
+msgid "Declined"
+msgstr "Отклонено"
+
+#: apps/generic/models.py:36
+msgid "Status"
+msgstr "Статус"
+
+#: apps/generic/models.py:37
+msgid "Is ban"
+msgstr "Забанен?"
+
+#: apps/groups/apps.py:7 apps/groups/models.py:37
+msgid "Groups"
+msgstr "Группы"
+
+#: apps/groups/models.py:36
+msgid "Group"
+msgstr "Группа"
+
+#: apps/logs/admin.py:33
+msgid "Create Datetime"
+msgstr "Дата создания"
+
+#: apps/logs/apps.py:7 apps/logs/models.py:29 config/dashboard.py:51
+msgid "Logs"
+msgstr "Логи"
+
+#: apps/logs/models.py:11
+msgid "NotSet"
+msgstr "NotSet"
+
+#: apps/logs/models.py:13
+msgid "Warning"
+msgstr "Warning"
+
+#: apps/logs/models.py:14
+msgid "Debug"
+msgstr "Debug"
+
+#: apps/logs/models.py:15
+msgid "Error"
+msgstr "Error"
+
+#: apps/logs/models.py:16
+msgid "Fatal"
+msgstr "Fatal"
+
+#: apps/logs/models.py:19
+msgid "Logger name"
+msgstr "Имя logger'a"
+
+#: apps/logs/models.py:20
+msgid "Level"
+msgstr "Уровень"
+
+#: apps/logs/models.py:21
+msgid "Msg"
+msgstr "Сообщение"
+
+#: apps/logs/models.py:22
+msgid "Trace"
+msgstr "Traceback"
+
+#: apps/logs/models.py:30
+msgid "Log"
+msgstr "Лог"
+
+#: apps/mail/admin.py:16 apps/mail/models.py:12
+msgid "Body"
+msgstr "Тело"
+
+#: apps/mail/apps.py:7
+msgid "Mail"
+msgstr "Почта"
+
+#: apps/mail/models.py:8
+msgid "From email"
+msgstr "От кого"
+
+#: apps/mail/models.py:9
+msgid "To emails"
+msgstr "Кому"
+
+#: apps/mail/models.py:11
+msgid "Subject"
+msgstr "Тема"
+
+#: apps/mail/models.py:15 apps/users/models.py:155
+msgid "Email"
+msgstr "Почта"
+
+#: apps/mail/models.py:16 config/dashboard.py:45
+msgid "Emails"
+msgstr "Почта"
+
+#: apps/mail/templates/base.html:14
+msgid "Hello"
+msgstr "Здравствуйте"
+
+#: apps/mail/templates/base.html:21
+msgid ""
+"\n"
+"        Best regards,\n"
+"        <br />\n"
+"        Team vteme.life\n"
+"    "
+msgstr ""
+"\n"
+"        C уважением,\n"
+"        <br />\n"
+"        Команда vteme.life\n"
+"    "
+
+#: apps/mail/templates/users/reset_password_verification_body.html:5
+msgid ""
+"\n"
+"    For resetting your password on site\n"
+msgstr ""
+"\n"
+"    Для завершения сброса пароля на сайте\n"
+
+#: apps/mail/templates/users/reset_password_verification_body.html:9
+#: apps/mail/templates/users/sign_up_verification_body.html:9
+#, python-format
+msgid ""
+"\n"
+"    enter the code %(code)s on page\n"
+msgstr ""
+"\n"
+"    введите код %(code)s на странице\n"
+
+#: apps/mail/templates/users/reset_password_verification_subject.html:3
+msgid "VTeme - Reset your password"
+msgstr "ВТеме - Сброс пароля"
+
+#: apps/mail/templates/users/sign_up_verification_body.html:5
+msgid ""
+"\n"
+"    For finishing registration on site\n"
+msgstr ""
+"\n"
+"    Для завершения регистрации на сайте\n"
+
+#: apps/mail/templates/users/sign_up_verification_subject.html:3
+msgid "VTeme - Sign UP"
+msgstr "ВТеме - Регистрация"
+
+#: apps/management/apps.py:7
+msgid "Management"
+msgstr "Управление"
+
+#: apps/management/serializers/news.py:39
+msgid "End publish data has to be > publish data"
+msgstr "Дата окончания публикации должна быть > даты публикации"
+
+#: apps/management/serializers/posts.py:43
+msgid "Theme is required"
+msgstr "Выберите тему"
+
+#: apps/media/apps.py:7 apps/media/models.py:90 apps/media/models.py:91
+#: config/dashboard.py:89
+msgid "Media"
+msgstr "Медиа"
+
+#: apps/media/models.py:16
+msgid "Media Tag"
+msgstr "Медиа тэг"
+
+#: apps/media/models.py:18
+msgid "Show media"
+msgstr "Показывать медиа"
+
+#: apps/media/models.py:27 apps/media/models.py:28
+msgid "Media Folder"
+msgstr "Медиа альбом"
+
+#: apps/media/models.py:43
+msgid "Photo"
+msgstr "Фото"
+
+#: apps/media/models.py:43
+msgid "Video"
+msgstr "Видео"
+
+#: apps/media/models.py:58 apps/news/models.py:103 apps/posts/models.py:69
+msgid "Title"
+msgstr "Заголовок"
+
+#: apps/media/models.py:64
+msgid "Embed video code"
+msgstr "Встраиваемый видео код"
+
+#: apps/media/serializers.py:110
+msgid "Please upload image or provide video code"
+msgstr "Пожалуйста загрузите картинку или укажите video code для видео"
+
+#: apps/memberships/apps.py:7
+msgid "Memberships"
+msgstr "Участники"
+
+#: apps/memberships/models.py:36
+msgid "Membership request"
+msgstr "Запрос на участие"
+
+#: apps/memberships/models.py:37
+msgid "Membership requests"
+msgstr "Запросы на участие"
+
+#: apps/memberships/serializers.py:56
+msgid "You have already sent request to add this user to friends."
+msgstr "Вы уже отсылали запрос на добавление пользователя в СВОИ"
+
+#: apps/memberships/serializers.py:61
+msgid "User has already sent request to add you to friends."
+msgstr "Вам уже отослан запрос на добавление в СВОИ от этого пользователя"
+
+#: apps/memberships/serializers.py:64
+msgid "You have already sent request to join this group."
+msgstr "Вы уже отсылали запрос на добавление пользователя в группу"
+
+#: apps/memberships/serializers.py:67
+msgid "You have already sent request to join this club."
+msgstr "Вы уже отсылали запрос на добавление пользователя в клуб"
+
+#: apps/mobile/models.py:9
+msgid "Version"
+msgstr "Версия"
+
+#: apps/mobile/models.py:10
+msgid "Android APK"
+msgstr "Андройд APK"
+
+#: apps/mobile/models.py:12
+msgid "Readme"
+msgstr "Справка"
+
+#: apps/mobile/models.py:15
+msgid "Mobile Version"
+msgstr "Мобильная версия"
+
+#: apps/mobile/models.py:16
+msgid "Mobile Versions"
+msgstr "Мобильный версии"
+
+#: apps/news/admin.py:26 apps/news/apps.py:7 apps/news/models.py:131
+#: apps/news/models.py:132 config/dashboard.py:66
+msgid "News"
+msgstr "Новости"
+
+#: apps/news/models.py:60
+msgid "Hot News"
+msgstr "Горячие новости"
+
+#: apps/news/models.py:61
+msgid "VTeme: New Media"
+msgstr "ВТеме: Новые Медиа"
+
+#: apps/news/models.py:62
+msgid "VTeme: New Articles"
+msgstr "ВТеме: Новые Статьи"
+
+#: apps/news/models.py:63
+msgid "VTeme: New Whisper Articles"
+msgstr "ВТеме: Новые Статьи в Шопоте"
+
+#: apps/news/models.py:64
+msgid "Friends: New Media"
+msgstr "СВои: Новые Медиа"
+
+#: apps/news/models.py:65
+msgid "Friends: New Articles"
+msgstr "СВои: Новые Статьи"
+
+#: apps/news/models.py:66
+msgid "Friends: Profile Changes"
+msgstr "СВои: Изменение Профайла"
+
+#: apps/news/models.py:67
+msgid "Groups: New Media"
+msgstr "Группы: Новые Медиа"
+
+#: apps/news/models.py:68
+msgid "Groups: New Articles"
+msgstr "Группы: Новые Статьи"
+
+#: apps/news/models.py:69
+msgid "Clubs: New Media"
+msgstr "Клубы: Новые Медиа"
+
+#: apps/news/models.py:70
+msgid "Clubs: New Articles"
+msgstr "Клубы: Новые Статьи"
+
+#: apps/news/models.py:71
+msgid "Clubs: Events"
+msgstr "Клубы: Мероприятия"
+
+#: apps/news/models.py:93
+msgid "Recipients"
+msgstr "Получатели"
+
+#: apps/news/models.py:105 apps/posts/models.py:75 apps/posts/models.py:89
+msgid "Post"
+msgstr "Пост"
+
+#: apps/news/models.py:109
+msgid "Publish Date"
+msgstr "Дата публикации"
+
+#: apps/news/models.py:110
+msgid "End Publish Date"
+msgstr "Окончание публикации"
+
+#: apps/news/signals.py:29
+#, python-format
+msgid "User has updated the fields %s"
+msgstr "Пользователь обновил следующие поля %s"
+
+#: apps/notifications/apps.py:7 config/dashboard.py:72
+msgid "Notifications"
+msgstr "Уведомления"
+
+#: apps/posts/apps.py:7 apps/posts/models.py:90 config/dashboard.py:86
+msgid "Posts"
+msgstr "Посты"
+
+#: apps/posts/models.py:38
+msgid "Swing History"
+msgstr "Swing Истории"
+
+#: apps/posts/models.py:40
+msgid "Bdsm History"
+msgstr "Bdsm Истории"
+
+#: apps/posts/models.py:41
+msgid "Lgbt"
+msgstr "Lgbt"
+
+#: apps/posts/models.py:42
+msgid "Lgbt History"
+msgstr "Lgbt Истории"
+
+#: apps/posts/models.py:43
+msgid "Sex"
+msgstr "Секс"
+
+#: apps/posts/models.py:44
+msgid "Sex History"
+msgstr "Секс Истории"
+
+#: apps/posts/models.py:45
+msgid "Rule"
+msgstr "Правило"
+
+#: apps/posts/models.py:46
+msgid "Rule Media"
+msgstr "Правила Медиа"
+
+#: apps/posts/models.py:47
+msgid "Advertisment"
+msgstr "реклама"
+
+#: apps/posts/models.py:63
+msgid "Is Whisper"
+msgstr "Шопот?"
+
+#: apps/shops/apps.py:7 apps/shops/models.py:27 config/dashboard.py:128
+msgid "Shops"
+msgstr "Магазины"
+
+#: apps/shops/models.py:26 apps/shops/models.py:31
+msgid "Shop"
+msgstr "Магазин"
+
+#: apps/shops/models.py:37
+msgid "Price"
+msgstr "Цена"
+
+#: apps/shops/models.py:43
+msgid "Item"
+msgstr "Товар"
+
+#: apps/shops/models.py:44
+msgid "Items"
+msgstr "Товары"
+
+#: apps/storage/apps.py:7
+msgid "Storage"
+msgstr "Хранилище"
+
+#: apps/storage/models.py:19 apps/storage/models.py:25
+msgid "File"
+msgstr "Файл"
+
+#: apps/storage/models.py:26 config/dashboard.py:54
+msgid "Files"
+msgstr "Файлы"
+
+#: apps/storage/models.py:68
+msgid "Is from editor"
+msgstr "Из редактора"
+
+#: apps/storage/models.py:90
+msgid "Images"
+msgstr "Картинки"
+
+#: apps/users/admin.py:13
+msgid "Profile info"
+msgstr "Информация профиля"
+
+#: apps/users/admin.py:30 apps/users/models.py:180
+msgid "Social links"
+msgstr "Ссылки на соц. сети"
+
+#: apps/users/admin.py:31 apps/users/models.py:183
+msgid "Friends"
+msgstr "Друг"
+
+#: apps/users/admin.py:32 apps/users/models.py:201
+msgid "Role"
+msgstr "Роль"
+
+#: apps/users/admin.py:33 apps/users/models.py:202
+msgid "Real"
+msgstr "Реал"
+
+#: apps/users/admin.py:34
+msgid "Important dates"
+msgstr "Важные даты"
+
+#: apps/users/admin.py:36
+msgid "Access and Permissions"
+msgstr "Права и доступы"
+
+#: apps/users/models.py:80
+msgid "Guest"
+msgstr "Гость"
+
+#: apps/users/models.py:81
+msgid "Member"
+msgstr "Участник"
+
+#: apps/users/models.py:82
+msgid "Organizer"
+msgstr "Организатор"
+
+#: apps/users/models.py:83
+msgid "Moderator"
+msgstr "Модератор"
+
+#: apps/users/models.py:94
+msgid "M"
+msgstr "М"
+
+#: apps/users/models.py:95
+msgid "W"
+msgstr "Ж"
+
+#: apps/users/models.py:96
+msgid "Family"
+msgstr "Семейная пара МЖ"
+
+#: apps/users/models.py:97
+msgid "MW"
+msgstr "Пара МЖ"
+
+#: apps/users/models.py:98
+msgid "MM"
+msgstr "ММ"
+
+#: apps/users/models.py:99
+msgid "WW"
+msgstr "ЖЖ"
+
+#: apps/users/models.py:100
+msgid "Trans"
+msgstr "Транс"
+
+#: apps/users/models.py:106
+msgid "Married"
+msgstr "Замужем/Женат"
+
+#: apps/users/models.py:106
+msgid "Dating"
+msgstr "Есть любовник/любовница"
+
+#: apps/users/models.py:106
+msgid "Single"
+msgstr "Свободен/Свободна"
+
+#: apps/users/models.py:134
+msgid "Open Swing"
+msgstr "Открытый Свинг"
+
+#: apps/users/models.py:135
+msgid "Close Swing"
+msgstr "Закрытый Свинг"
+
+#: apps/users/models.py:136
+msgid "Soft Swing"
+msgstr "Мягкий Свинг"
+
+#: apps/users/models.py:137
+msgid "WMW"
+msgstr "ЖМЖ"
+
+#: apps/users/models.py:138
+msgid "MWM"
+msgstr "МЖМ"
+
+#: apps/users/models.py:139
+msgid "GangBang"
+msgstr "ГангБанг"
+
+#: apps/users/models.py:140
+msgid "Sexwife"
+msgstr "Сексвайф"
+
+#: apps/users/models.py:141
+msgid "Hotwife"
+msgstr "Hotwife"
+
+#: apps/users/models.py:142
+msgid "Cuckold"
+msgstr "Cuckold"
+
+#: apps/users/models.py:143
+msgid "Cuckqueen"
+msgstr "Cuckqueen"
+
+#: apps/users/models.py:144
+msgid "Top"
+msgstr "BDSM Верхний"
+
+#: apps/users/models.py:145
+msgid "Bottom"
+msgstr "BDSM Нижний"
+
+#: apps/users/models.py:146
+msgid "Switch"
+msgstr "BDSM Свитч"
+
+#: apps/users/models.py:147
+msgid "LGBT Active"
+msgstr "ЛГБТ Актив"
+
+#: apps/users/models.py:148
+msgid "LGBT Passive"
+msgstr "ЛГБТ Пассив"
+
+#: apps/users/models.py:149
+msgid "LGBT Switch"
+msgstr "ЛГБТ Свитч"
+
+#: apps/users/models.py:163
+msgid "Phone"
+msgstr "Телефон"
+
+#: apps/users/models.py:164
+msgid "Skype"
+msgstr "Скайп"
+
+#: apps/users/models.py:166
+msgid "Birthday (M, W in WW or trans)"
+msgstr "Год рождения (М, Ж в ЖЖ или транс)"
+
+#: apps/users/models.py:167
+msgid "Birthday second (W, M in MM)"
+msgstr "Год рождения (Ж, М в ММ)"
+
+#: apps/users/models.py:171
+msgid "Gender"
+msgstr "Пол"
+
+#: apps/users/models.py:174
+msgid "Relationship formats"
+msgstr "Форматы"
+
+#: apps/users/models.py:181
+msgid "About"
+msgstr "Обо мне"
+
+#: apps/users/models.py:186 apps/users/models.py:292 apps/users/models.py:293
+msgid "Black List"
+msgstr "Черный список"
+
+#: apps/users/models.py:195
+msgid "Approver real status"
+msgstr "Кто подтвердил реал статус"
+
+#: apps/users/models.py:203
+msgid "System administrator"
+msgstr "Системный администратор"
+
+#: apps/users/models.py:204
+msgid "Staff"
+msgstr "Доступ в админку"
+
+#: apps/users/models.py:205
+msgid "Active"
+msgstr "Активный"
+
+#: apps/users/models.py:206
+msgid "Is email verified"
+msgstr "Почта проверена?"
+
+#: apps/users/models.py:207
+msgid "Is phone verified"
+msgstr "Телефон проверен?"
+
+#: apps/users/models.py:209
+msgid "SignUp Key"
+msgstr "Ключ регистрации"
+
+#: apps/users/models.py:210
+msgid "Reset Password Key"
+msgstr "Ключ сброса пароля"
+
+#: apps/users/models.py:212
+msgid "Privacy"
+msgstr "Политика приватности"
+
+#: apps/users/models.py:275
+msgid "Wanker"
+msgstr "Дрочер"
+
+#: apps/users/models.py:276
+msgid "Don't wont to communicate with the user"
+msgstr "Не хочу общаться с пользователем"
+
+#: apps/users/models.py:277
+msgid "Just So"
+msgstr "Просто так"
+
+#: apps/users/models.py:284
+msgid "Reason"
+msgstr "Причина"
+
+#: apps/users/models.py:285
+msgid "Reason Message"
+msgstr "Причина текст"
+
+#: apps/users/models.py:298
+msgid "Link"
+msgstr "Ссылка"
+
+#: apps/users/models.py:300
+msgid "Favicon"
+msgstr "Фавикон"
+
+#: apps/users/models.py:306
+msgid "User Link"
+msgstr "Ссылка пользователя"
+
+#: apps/users/models.py:307
+msgid "User Links"
+msgstr "Ссылки пользователей"
+
+#: apps/users/models.py:312
+msgid "Last seen"
+msgstr "Последнее посещение"
+
+#: apps/users/models.py:320
+msgid "User Online"
+msgstr "Пользователь Онлайн"
+
+#: apps/users/models.py:321
+msgid "Users Online"
+msgstr "Пользователи Онлайн"
+
+#: apps/users/serializers/black_list.py:22
+msgid "You've already added this user to black list"
+msgstr "Вы уже добавили пользователя в черный список"
+
+#: apps/users/serializers/mixins.py:21
+msgid "Passwords do not match"
+msgstr "Пароли не совпадают"
+
+#: apps/users/serializers/mixins.py:23 apps/users/serializers/mixins.py:25
+#: apps/users/serializers/profile.py:131 apps/users/serializers/sign_up.py:63
+msgid "Field is required"
+msgstr "Обязательное поле"
+
+#: apps/users/serializers/mixins.py:44 apps/users/serializers/mixins.py:49
+msgid "Birthday should be in range {} - {}"
+msgstr "Год рождения должен быть в пределах {} - {}"
+
+#: apps/users/serializers/profile.py:19
+msgid "Anonymous"
+msgstr "Анонимный пользователь"
+
+#: apps/users/serializers/profile.py:111 apps/users/serializers/sign_up.py:19
+msgid "User with this email already exists."
+msgstr "Пользователь с этим email уже существует."
+
+#: apps/users/serializers/profile.py:117 apps/users/serializers/sign_up.py:25
+msgid "User with this slug already exists."
+msgstr "Пользователь с этим идентификатором уже существует."
+
+#: apps/users/serializers/reset_password.py:11
+msgid "User doesn't exist with this email"
+msgstr "Пользователь не существует с этой почтой"
+
+#: apps/users/serializers/reset_password.py:15
+msgid ""
+"User is not active. Please finish a registration                     or "
+"contact with site administration"
+msgstr ""
+"Пользователь не активный. Пожалуйста завершите регистрацию или свяжитесь с "
+"администратором сайта"
+
+#: apps/users/serializers/reset_password.py:33
+msgid "Invalide Code. Please check email and provide valid code"
+msgstr "Неправильный код. Пожалуйста проверьте Вашу почту и введите верный код"
+
+#: apps/users/serializers/sign_in.py:22
+msgid "Credentials are invalid."
+msgstr ""
+"Введенных данных нет в системе. Попробуйте поменять верхние буквы на нижние "
+"в почте. Высота букв должна совпадать."
+
+#: apps/users/serializers/sign_up.py:30
+msgid "Please read privacy."
+msgstr "Пожалуйста прочитайте политику приватности."
+
+#: config/dashboard.py:31
+msgid "Site management"
+msgstr "Управление сайтом"
+
+#: config/dashboard.py:62
+msgid "Chat/Notification management"
+msgstr "Чат и уведомления"
+
+#: config/dashboard.py:82
+msgid "Content management"
+msgstr "Управление контентом"
+
+#: config/dashboard.py:97
+msgid "Mobile Apps"
+msgstr "Мобильные приложения"
+
+#: config/dashboard.py:115
+msgid "Community management"
+msgstr "Управление сообществами"
+
+#: config/dashboard.py:119
+msgid "Communities"
+msgstr "Сообщества"
+
+#: config/dashboard.py:137
+msgid "Quick links"
+msgstr "Быстрые ссылки"
+
+#: config/dashboard.py:143
+msgid "Return to site"
+msgstr "На сайт"
+
+#: config/dashboard.py:145
+msgid "Change password"
+msgstr "Изменить пароль"
+
+#: config/dashboard.py:148
+msgid "Log out"
+msgstr "Выйти"
+
+#: config/dashboard.py:155 config/dashboard.py:174
+msgid "Recent Actions"
+msgstr "Последние действия"
+
+#: config/menu.py:22
+msgid "Dashboard"
+msgstr "Управление"
+
+#: config/menu.py:24
+msgid "Applications"
+msgstr "Приложения"
+
+#: config/settings/base.py:141
+msgid "Russian"
+msgstr "Русский"
+
+#: config/settings/base.py:141
+msgid "English"
+msgstr "Английский"
