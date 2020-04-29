@@ -204,6 +204,7 @@ REST_FRAMEWORK = {
         "rest_framework.filters.SearchFilter",
     ),
     "PAGE_SIZE": 30,
+    "DEFAULT_SCHEMA_CLASS": "rest_framework.schemas.coreapi.AutoSchema",
 }
 
 EMAIL_BACKEND = "apps.mail.backends.SendgridDatabaseBackend"
