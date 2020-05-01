@@ -1,9 +1,9 @@
 version: "2.1"
 
 volumes:
-  postgres_data: {}
-  media_data: {}
-  static_data: {}
+  postgres_data:
+  media_data:
+  static_data:
 
 services:
   postgres:
@@ -11,11 +11,11 @@ services:
     volumes:
       - postgres_data:/var/lib/postgresql/data
     env_file:
-      - ./envsets/env.prod
+      - .docker.env
     ports:
       - "5432:5432"
     healthcheck:
-      test: "PGPASSWORD=postgrespass psql --host 127.0.0.1 --dbname postgresuser --username postgresuser --quiet --no-align --tuples-only -c 'SELECT 1;'"
+      test: "psql --host 127.0.0.1 --dbname vteme_db --quiet --no-align --tuples-only -c 'SELECT 1;'"
       interval: 30s
       timeout: 5s
       retries: 5
@@ -35,7 +35,7 @@ services:
       context: .
       dockerfile: ./compose/Dockerfile
     env_file:
-      - ./envsets/env.prod
+      - .docker.env
     volumes:
       - .:/app/server
       - media_data:/app/server/config/server_media
@@ -54,7 +54,7 @@ services:
     <<: *django-base
     command: celery -A config beat -l INFO
 
-  django:
+  local_server:
     <<: *django-base
     depends_on:
       postgres:

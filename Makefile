@@ -11,6 +11,7 @@ celerybeat:
 start:
 	python manage.py collectstatic --noinput
 	python manage.py migrate --noinput
+	python manage.py compilemessages --locale ru
 	python manage.py runserver 0.0.0.0:8000
 
 lint:

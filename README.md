@@ -1,6 +1,43 @@
-# Vteme django server
+# Vteme server
 
-## Install system dependencies (Ubuntu / OSX)
+Dev stack:
+* django 3
+* django rest api
+* celery
+* uwsgi
+* postgres
+* sendgrid
+* rabbitmq
+* redis
+* docker
+
+## Clone repository
+
+Install git on your system https://git-scm.com/book/en/v2/Getting-Started-Installing-Git
+
+```
+git clone git@github.com:vtemelife/server.git
+cd server
+```
+
+## Run using docker
+
+Install docker on your system https://runnable.com/docker/getting-started/
+
+### Activate environment:
+
+```
+cp envsets/docker_dev.env .docker.env
+```
+
+### Build and Run
+
+```
+docker-compose build
+docker-compose up
+```
+
+## Run without docker
 
 ### Install required services (OSX)
 
@@ -29,15 +66,6 @@ echo 'eval "$(pyenv init -)"' >> ~/.zshrc
 eval "$(pyenv init -)"
 ```
 
-## Setup environment and run project
-
-### Clone repository and install dependencies
-
-```
-git clone git@github.com:vtemelife/server.git
-cd server
-```
-
 ### Install and activate virtual environment
 
 ```
@@ -51,8 +79,8 @@ source env/bin/activate
 ### Activate environment:
 
 ```
-cp envsets/env.dev .env
-source .env
+cp envsets/local_dev.env .local.env
+source .local.env
 ```
 
 ### Install project requirements:
@@ -68,19 +96,21 @@ createdb vteme_db
 python manage.py migrate
 ```
 
-## Start dev server:
+### Start dev server:
 
 ```
 make start
 ```
 
-## Run all tests:
+## Run tests:
+
+### Run all tests:
 
 ```
 make test
 ```
 
-## Run one test:
+### Run one test:
 
 ```
 pytest file/path/filename.py::ClassName::test_method
