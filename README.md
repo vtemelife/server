@@ -115,3 +115,9 @@ make test
 ```
 pytest file/path/filename.py::ClassName::test_method
 ```
+
+## Apply db snapshot
+
+```
+psql -f db_2019-09-04_15\:48.sql vteme_db
+```

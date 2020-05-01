@@ -10,12 +10,14 @@ services:
     image: postgres:10.5-alpine
     volumes:
       - postgres_data:/var/lib/postgresql/data
-    env_file:
-      - .docker.env
+    environment:
+      - POSTGRES_DB=vteme_db
+      - POSTGRES_PASSWORD=vteme 
+      - POSTGRES_USER=vteme
     ports:
       - "5432:5432"
     healthcheck:
-      test: "psql --host 127.0.0.1 --dbname vteme_db --quiet --no-align --tuples-only -c 'SELECT 1;'"
+      test: "PGPASSWORD=vteme psql --host 127.0.0.1 --dbname vteme_db --username vteme --quiet --no-align --tuples-only -c 'SELECT 1;'"
       interval: 30s
       timeout: 5s
       retries: 5
