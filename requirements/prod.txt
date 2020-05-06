@@ -17,3 +17,4 @@ pillow==7.1.2
 coreapi-cli==1.0.9
 uwsgi==2.0.18
 unidecode==1.0.23
+tqdm==4.46.0
